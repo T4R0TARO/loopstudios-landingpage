@@ -1,3 +1,6 @@
+/*---------------------------------*\
+            VARIABLES 
+\*---------------------------------*/
 *,
 *::before,
 *::after {
@@ -14,19 +17,21 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
   font: inherit;
+  display: inline-block;
+  color: hsl(0deg, 0%, 100%);
 }
 
-ul li {
+li {
   list-style: none;
 }
 
@@ -43,13 +48,66 @@ i {
   display: block;
 }
 
-.container {
-  background: snow;
-  width: 100%;
-  min-height: 100vh;
+/*---------------------------------*\
+        HEADER SECTIONS
+\*---------------------------------*/
+.main-container {
+  max-width: 100%;
   margin: auto;
-  position: relative;
-  overflow: hidden;
+  background: hsl(0deg, 0%, 100%);
 }
+
+header {
+  background: rgba(0, 0, 0, 0.4) url(/images/desktop/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 65px 165px;
+  margin-bottom: 180px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(min-content, min-content));
+  grid-gap: 32px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  background: hsl(0deg, 0%, 100%);
+}
+
+nav ul li:hover::after {
+  width: 25px;
+}
+
+.banner h1 {
+  max-width: 650px;
+  padding: 38px;
+  margin-bottom: 80px;
+  border: 3px solid hsl(0deg, 0%, 100%);
+  font-size: 75px;
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*---------------------------------*\
+            SECTIONS
+\*---------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
