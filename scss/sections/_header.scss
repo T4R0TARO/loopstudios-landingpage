@@ -1,0 +1,64 @@
+@use "../variables" as *;
+/*---------------------------------*\
+        HEADER SECTIONS
+\*---------------------------------*/
+
+// main container
+.main-container {
+  max-width: 100%;
+  margin: auto;
+  background: $white;
+}
+
+// header section style
+header {
+  background: #0006 url(/images/desktop/image-hero.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: 65px $px-left-right;
+  margin-bottom: $mb-default;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+// navbar nav
+nav ul {
+  display: grid;
+  // changes text direction
+  grid-template-columns: repeat(5, minmax(min-content, min-content));
+  grid-gap: 32px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  background: $white;
+}
+
+nav ul li:hover::after {
+  width: 25px;
+}
+
+// banner style
+.banner h1 {
+  max-width: 650px;
+  padding: 38px;
+  margin-bottom: 80px;
+  border: 3px solid $white;
+  font-size: $ff-h1;
+  color: $white;
+}

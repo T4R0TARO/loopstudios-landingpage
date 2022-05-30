@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 *,
 *::before,
 *::after {
@@ -7,26 +9,28 @@
 }
 
 html {
-  font-size: 15px;
+  font-size: $ff-regular;
   font-weight: 300;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $ff-josefin-sans;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
+h3 {
+  font-family: $ff-josefin-sans;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
   font: inherit;
+  display: inline-block;
+  color: $white;
 }
 
-ul li {
+li {
   list-style: none;
 }
 
@@ -41,13 +45,4 @@ span,
 img,
 i {
   display: block;
-}
-
-.container {
-  background: snow;
-  width: 100%;
-  min-height: 100vh;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
 }

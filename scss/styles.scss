@@ -1,2 +1,7 @@
 @use "./variables" as *;
 @use "./resets" as *;
+
+/*---------------------------------*\
+            SECTIONS
+\*---------------------------------*/
+@use "./sections/header" as *;
