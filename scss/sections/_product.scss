@@ -1,0 +1,79 @@
+@use "../variables" as *;
+/*---------------------------------*\
+        PROJECT SECTIONS
+\*---------------------------------*/
+
+// product section styles
+.product {
+  position: relative;
+  padding: 0 $px-left-right;
+  margin-bottom: $mb-default;
+}
+
+.product h2 {
+  font-size: $fs-h2;
+  margin-bottom: 80px;
+}
+
+// product grid stlye
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  grid-gap: 30px;
+}
+
+.product-card {
+  position: relative;
+  height: 450px;
+  cursor: pointer;
+}
+
+.product-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 40%, #000b);
+}
+
+// highlight card on hover
+.product-card:hover::after {
+  background: linear-gradient(100deg, #fffa 40%, #555a);
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: $fs-h3;
+  color: $white;
+  z-index: 5;
+}
+
+.product-card:hover h3 {
+  color: $black;
+}
+
+// btn primary
+
+.btn-primary {
+  position: absolute;
+  right: $px-left-right;
+  top: 5px;
+  padding: 8px 35px;
+  letter-spacing: 5px;
+  border: 1px solid $black;
+  color: $black;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $black;
+}
