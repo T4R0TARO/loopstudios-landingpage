@@ -127,15 +127,88 @@ nav ul li:hover::after {
   max-width: 640px;
   background: hsl(0deg, 0%, 100%);
 }
-
 .about .content-box h2 {
   font-size: 50px;
   margin-bottom: 30px;
 }
-
 .about .content-box p {
   color: hsl(0deg, 0%, 41%);
   line-height: 1.7;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*---------------------------------*\
+        PROJECT SECTIONS
+\*---------------------------------*/
+.product {
+  position: relative;
+  padding: 0 165px;
+  margin-bottom: 180px;
+}
+
+.product h2 {
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  place-content: center;
+  grid-gap: 30px;
+}
+
+.product-card {
+  position: relative;
+  height: 450px;
+  cursor: pointer;
+}
+
+.product-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 40%, rgba(0, 0, 0, 0.7333333333));
+}
+
+.product-card:hover::after {
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.6666666667) 40%, rgba(85, 85, 85, 0.6666666667));
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 35px;
+  left: 40px;
+  font-size: 34px;
+  color: hsl(0deg, 0%, 100%);
+  z-index: 5;
+}
+
+.product-card:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+}
+
+.btn-primary {
+  position: absolute;
+  right: 165px;
+  top: 5px;
+  padding: 8px 35px;
+  letter-spacing: 5px;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+}
+
+.btn-primary:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 0%);
 }
 
 /*---------------------------------*\
