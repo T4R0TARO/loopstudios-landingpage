@@ -89,7 +89,7 @@ nav ul li::after {
   left: 50%;
   width: 0;
   height: 2px;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   background: hsl(0deg, 0%, 100%);
 }
 
@@ -121,16 +121,18 @@ nav ul li:hover::after {
 
 .about .content-box {
   position: absolute;
-  top: 100px;
+  top: 180px;
   left: 50%;
   padding: 95px;
   max-width: 640px;
   background: hsl(0deg, 0%, 100%);
 }
+
 .about .content-box h2 {
   font-size: 50px;
   margin-bottom: 30px;
 }
+
 .about .content-box p {
   color: hsl(0deg, 0%, 41%);
   line-height: 1.7;
