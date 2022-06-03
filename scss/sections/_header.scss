@@ -12,7 +12,7 @@
 
 // header section style
 header {
-  background: #0006 url(./images/desktop/image-hero.jpg) no-repeat center;
+  background: #0006 url(../images/desktop/image-hero.jpg) no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   padding: 65px $px-left-right;
@@ -168,7 +168,7 @@ nav ul li:hover::after {
   $mb-default: 100px;
 
   header {
-    background: url(./images/mobile/image-hero.jpg) center no-repeat;
+    background: url(../images/mobile/image-hero.jpg) center no-repeat;
     background-size: cover;
     padding: 40px 25px;
     padding: 65px 25px;
