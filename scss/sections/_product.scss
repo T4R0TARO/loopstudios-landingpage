@@ -77,3 +77,57 @@
   color: $white;
   background-color: $black;
 }
+
+//MEDIA QUERIES
+//PRODUCT SECTION RESPONSIVE
+@media screen and (max-width: 992px) {
+  .product h2 {
+    text-align: center;
+  }
+  .btn-primary {
+    position: static;
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+
+// mobile screens 📱
+@media screen and (max-width: 576px) {
+  //TYPOGRPAHY
+  $fs-h1: 2.6em;
+  $fs-h2: 2.1em;
+  $fs-h3: 1.6em;
+
+  // SPACING
+  $px-left-right: 25px;
+  $mb-default: 100px;
+
+  .product {
+    padding: 0 25px;
+    margin-bottom: 100px;
+  }
+
+  .product h2 {
+    font-size: 2.1em;
+    margin-bottom: 20px;
+  }
+  .product-grid {
+    grid-gap: 25px;
+  }
+
+  .product-card {
+    height: 117px;
+  }
+
+  .product-card h3 {
+    font-size: 1.6em;
+    bottom: 15px;
+    left: 20px;
+  }
+  .btn-primary {
+    margin-top: 35px;
+    right: 25px;
+  }
+}

@@ -26,6 +26,12 @@ header {
   margin-bottom: 120px;
 }
 
+// mobile nav brand style 📱
+.mobile-nav-brand {
+  cursor: pointer;
+  display: none;
+}
+
 // navbar nav
 nav ul {
   display: grid;
@@ -53,6 +59,12 @@ nav ul li:hover::after {
   width: 25px;
 }
 
+// mobile nav toggler stlye 📱
+.nav-toggler {
+  cursor: pointer;
+  display: none;
+}
+
 // banner style
 .banner h1 {
   max-width: 650px;
@@ -61,4 +73,117 @@ nav ul li:hover::after {
   border: 3px solid $white;
   font-size: $fs-h1;
   color: $white;
+}
+
+// MEDIA QUERIES
+// HEADER SECTION RESPONSIVE
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 65px 80px; /*reponsive padding*/
+  }
+
+  .mobile-nav-brand {
+    display: flex;
+    position: absolute;
+    right: 25px;
+    left: 25px;
+    top: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-nav-brand img {
+    max-width: 145px;
+  }
+
+  // navbar nav for sm screens
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    left: -100%; /*hides mobile menu*/
+    width: 100%;
+    height: 100vh;
+    background: $black;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    transition: ease 0.25s;
+
+    ul {
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
+      a {
+        font-family: $ff-josefin-sans;
+        font-size: 25px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .active {
+    left: 0;
+  }
+
+  nav ul li::after {
+    display: none;
+  }
+  .nav-toggler {
+    display: block;
+  }
+}
+
+// tablet screens
+@media screen and (max-width: 768px) {
+  //TYPOGRPAHY
+  $fs-h1: 4em;
+  $fs-h2: 2.8em;
+
+  // SPACING
+  $px-left-right: 40px;
+  $mb-default: 120px;
+
+  .banner h1 {
+    font-size: 4em;
+    padding: 22px;
+  }
+
+  header {
+    padding: 65px 40px;
+    margin-bottom: 120px;
+  }
+}
+
+// mobile screens 📱
+@media screen and (max-width: 576px) {
+  //TYPOGRPAHY
+  $fs-h1: 2.6em;
+  $fs-h2: 2.1em;
+  $fs-h3: 1.6em;
+
+  // SPACING
+  $px-left-right: 25px;
+  $mb-default: 100px;
+
+  header {
+    background: url(/images/mobile/image-hero.jpg) center no-repeat;
+    background-size: cover;
+    padding: 40px 25px;
+    padding: 65px 25px;
+    margin-bottom: 100px;
+  }
+
+  //navbar responsive
+  .navbar {
+    margin-bottom: 160px;
+  }
+  .navbar-brand img {
+    max-width: 145px;
+  }
+  .banner h1 {
+    margin-bottom: 175px;
+    font-size: 2.6em;
+  }
 }
