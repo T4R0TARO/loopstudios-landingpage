@@ -54,13 +54,13 @@
 
 // tablet screens
 @media screen and (max-width: 768px) {
-  //TYPOGRPAHY
-  $fs-h1: 4em;
-  $fs-h2: 2.8em;
+  // //TYPOGRPAHY
+  // $fs-h1: 4em;
+  // $fs-h2: 2.8em;
 
-  // SPACING
-  $px-left-right: 40px;
-  $mb-default: 120px;
+  // // SPACING
+  // $px-left-right: 40px;
+  // $mb-default: 120px;
 
   .about {
     padding: 0 40px;
@@ -78,14 +78,14 @@
 
 // mobile screens 📱
 @media screen and (max-width: 576px) {
-  //TYPOGRPAHY
-  $fs-h1: 2.6em;
-  $fs-h2: 2.1em;
-  $fs-h3: 1.6em;
+  // //TYPOGRPAHY
+  // $fs-h1: 2.6em;
+  // $fs-h2: 2.1em;
+  // $fs-h3: 1.6em;
 
-  // SPACING
-  $px-left-right: 25px;
-  $mb-default: 100px;
+  // // SPACING
+  // $px-left-right: 25px;
+  // $mb-default: 100px;
 
   .about .img-box {
     margin-bottom: 50px;
