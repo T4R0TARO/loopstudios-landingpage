@@ -12,7 +12,7 @@
 
 .product h2 {
   font-size: $fs-h2;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 // product grid stlye
@@ -20,12 +20,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   place-content: center;
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
 }
 
 .product-card {
   position: relative;
-  height: 450px;
+  height: 28.125rem;
   cursor: pointer;
 }
 
@@ -50,8 +50,8 @@
 
 .product-card h3 {
   position: absolute;
-  bottom: 35px;
-  left: 40px;
+  bottom: 2.1875rem;
+  left: 2.5rem;
   font-size: $fs-h3;
   color: $white;
   z-index: 5;
@@ -67,7 +67,7 @@
   position: absolute;
   right: $px-left-right;
   top: 5px;
-  padding: 8px 35px;
+  padding: 8px 2.1875rem;
   letter-spacing: 5px;
   border: 1px solid $black;
   color: $black;
@@ -95,39 +95,30 @@
 
 // mobile screens 📱
 @media screen and (max-width: 576px) {
-  // //TYPOGRPAHY
-  // $fs-h1: 2.6em;
-  // $fs-h2: 2.1em;
-  // $fs-h3: 1.6em;
-
-  // // SPACING
-  // $px-left-right: 25px;
-  // $mb-default: 100px;
-
   .product {
-    padding: 0 25px;
-    margin-bottom: 100px;
+    padding: 0 1.5625rem;
+    margin-bottom: 6.25rem;
   }
 
   .product h2 {
-    font-size: 2.1em;
-    margin-bottom: 20px;
+    font-size: 2.1rem;
+    margin-bottom: 1.25rem;
   }
   .product-grid {
-    grid-gap: 25px;
+    grid-gap: 1.5625rem;
   }
 
   .product-card {
-    height: 117px;
+    height: 7.3125rem;
   }
 
   .product-card h3 {
     font-size: 1.6em;
     bottom: 15px;
-    left: 20px;
+    left: 1.25rem;
   }
   .btn-primary {
-    margin-top: 35px;
-    right: 25px;
+    margin-top: 2.1875rem;
+    right: 1.5625;
   }
 }

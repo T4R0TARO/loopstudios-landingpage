@@ -61,15 +61,15 @@ header {
   background: rgba(0, 0, 0, 0.4) url(../.././images/desktop/image-hero.jpg) no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
-  padding: 65px 165px;
-  margin-bottom: 180px;
+  padding: 4.0625rem 10.3125rem;
+  margin-bottom: 11.25rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 
 .mobile-nav-brand {
@@ -80,7 +80,7 @@ header {
 nav ul {
   display: grid;
   grid-template-columns: repeat(5, minmax(min-content, min-content));
-  grid-gap: 32px;
+  grid-gap: 2rem;
 }
 
 nav ul li {
@@ -99,7 +99,7 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {
-  width: 25px;
+  width: 1.5625rem;
 }
 
 .nav-toggler {
@@ -108,26 +108,26 @@ nav ul li:hover::after {
 }
 
 .banner h1 {
-  max-width: 650px;
-  padding: 38px;
-  margin-bottom: 80px;
+  max-width: 40.625rem;
+  padding: 2.375rem;
+  margin-bottom: 5rem;
   border: 3px solid hsl(0deg, 0%, 100%);
-  font-size: 75px;
+  font-size: 4.6875rem;
   color: hsl(0deg, 0%, 100%);
 }
 
 @media screen and (max-width: 992px) {
   header {
-    padding: 65px 80px;
+    padding: 4.0625rem 5rem;
     /*reponsive padding*/
   }
 
   .mobile-nav-brand {
     display: flex;
     position: absolute;
-    right: 25px;
-    left: 25px;
-    top: 40px;
+    right: 1.5625rem;
+    left: 1.56254rem;
+    top: 2.5rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -144,7 +144,7 @@ nav ul li:hover::after {
     width: 100%;
     height: 100vh;
     background: hsl(0deg, 0%, 0%);
-    padding: 25px;
+    padding: 1.5625rem;
     display: flex;
     align-items: center;
     z-index: 10;
@@ -152,11 +152,11 @@ nav ul li:hover::after {
   }
   .navbar-nav ul {
     grid-template-columns: 1fr;
-    grid-gap: 25px;
+    grid-gap: 1.5625rem;
   }
   .navbar-nav ul a {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -175,35 +175,34 @@ nav ul li:hover::after {
 }
 @media screen and (max-width: 768px) {
   .banner h1 {
-    font-size: 4em;
-    padding: 22px;
+    font-size: 4rem;
+    padding: 1.375rem;
   }
 
   header {
-    padding: 65px 40px;
-    margin-bottom: 120px;
+    padding: 4.0625rem 2.5rem;
+    margin-bottom: 7.5rem;
   }
 }
 @media screen and (max-width: 576px) {
   header {
     background: url(../.././images/mobile/image-hero.jpg) center no-repeat;
     background-size: cover;
-    padding: 40px 25px;
-    padding: 65px 25px;
-    margin-bottom: 100px;
+    padding: 4.0625rem 1.5625rem;
+    margin-bottom: 6.25rem;
   }
 
   .navbar {
-    margin-bottom: 160px;
+    margin-bottom: 10rem;
   }
 
   .navbar-brand img {
-    max-width: 145px;
+    max-width: 9.0625rem;
   }
 
   .banner h1 {
-    margin-bottom: 175px;
-    font-size: 2.6em;
+    margin-bottom: 10.9375;
+    font-size: 2.6rem;
   }
 }
 /*---------------------------------*\
@@ -211,8 +210,8 @@ nav ul li:hover::after {
 \*---------------------------------*/
 .about {
   position: relative;
-  padding: 0 165px;
-  margin-bottom: 180px;
+  padding: 0 10.3125rem;
+  margin-bottom: 11.25rem;
 }
 
 .about .img-box img {
@@ -221,15 +220,15 @@ nav ul li:hover::after {
 
 .about .content-box {
   position: absolute;
-  top: 180px;
+  top: 11.25rem;
   left: 50%;
-  padding: 95px;
-  max-width: 640px;
+  padding: 5.9375rem;
+  max-width: 40rem;
   background: hsl(0deg, 0%, 100%);
 }
 .about .content-box h2 {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 3.125rem;
+  margin-bottom: 1.875rem;
 }
 .about .content-box p {
   color: hsl(0deg, 0%, 41%);
@@ -240,7 +239,7 @@ nav ul li:hover::after {
 
 @media screen and (max-width: 1200px) {
   .about .img-box {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   .about .img-box img {
@@ -251,17 +250,17 @@ nav ul li:hover::after {
     position: static;
     max-width: 100%;
     text-align: center;
-    padding: 0 95px;
+    padding: 0 5.9375rem;
   }
 }
 @media screen and (max-width: 768px) {
   .about {
-    padding: 0 40px;
-    margin-bottom: 120px;
+    padding: 0 2.5rem;
+    margin-bottom: 7.5rem;
   }
 
   .about-content-box {
-    padding: 0 50px;
+    padding: 0 3.125rem;
   }
 
   .about .content-box h2 {
@@ -270,7 +269,7 @@ nav ul li:hover::after {
 }
 @media screen and (max-width: 576px) {
   .about .img-box {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .about .content-box {
@@ -278,7 +277,7 @@ nav ul li:hover::after {
   }
 
   .about .content-box h2 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 /*---------------------------------*\
@@ -286,25 +285,25 @@ nav ul li:hover::after {
 \*---------------------------------*/
 .product {
   position: relative;
-  padding: 0 165px;
-  margin-bottom: 180px;
+  padding: 0 10.3125rem;
+  margin-bottom: 11.25rem;
 }
 
 .product h2 {
-  font-size: 50px;
-  margin-bottom: 80px;
+  font-size: 3.125rem;
+  margin-bottom: 5rem;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   place-content: center;
-  grid-gap: 30px;
+  grid-gap: 1.875rem;
 }
 
 .product-card {
   position: relative;
-  height: 450px;
+  height: 28.125rem;
   cursor: pointer;
 }
 
@@ -328,9 +327,9 @@ nav ul li:hover::after {
 
 .product-card h3 {
   position: absolute;
-  bottom: 35px;
-  left: 40px;
-  font-size: 34px;
+  bottom: 2.1875rem;
+  left: 2.5rem;
+  font-size: 2.125rem;
   color: hsl(0deg, 0%, 100%);
   z-index: 5;
 }
@@ -341,9 +340,9 @@ nav ul li:hover::after {
 
 .btn-primary {
   position: absolute;
-  right: 165px;
+  right: 10.3125rem;
   top: 5px;
-  padding: 8px 35px;
+  padding: 8px 2.1875rem;
   letter-spacing: 5px;
   border: 1px solid hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 0%);
@@ -369,32 +368,32 @@ nav ul li:hover::after {
 }
 @media screen and (max-width: 576px) {
   .product {
-    padding: 0 25px;
-    margin-bottom: 100px;
+    padding: 0 1.5625rem;
+    margin-bottom: 6.25rem;
   }
 
   .product h2 {
-    font-size: 2.1em;
-    margin-bottom: 20px;
+    font-size: 2.1rem;
+    margin-bottom: 1.25rem;
   }
 
   .product-grid {
-    grid-gap: 25px;
+    grid-gap: 1.5625rem;
   }
 
   .product-card {
-    height: 117px;
+    height: 7.3125rem;
   }
 
   .product-card h3 {
     font-size: 1.6em;
     bottom: 15px;
-    left: 20px;
+    left: 1.25rem;
   }
 
   .btn-primary {
-    margin-top: 35px;
-    right: 25px;
+    margin-top: 2.1875rem;
+    right: 1.5625;
   }
 }
 /*---------------------------------*\
@@ -402,24 +401,24 @@ nav ul li:hover::after {
 \*---------------------------------*/
 footer {
   background: hsl(0deg, 0%, 0%);
-  padding: 45px 165px;
+  padding: 2.8125rem 10.3125rem;
   display: flex;
   justify-content: space-between;
 }
 
 .footer-brand {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .footer-brand img {
-  max-width: 140px;
+  max-width: 8.75rem;
 }
 
 .social-links {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .social-links a {
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .social-links a:hover {
@@ -440,7 +439,7 @@ footer {
   }
 
   .footer-left {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .footer-brand {
@@ -457,21 +456,21 @@ footer {
 }
 @media screen and (max-width: 768px) {
   footer {
-    padding: 55px 40px;
+    padding: 3.4375rem 2.5rem;
   }
 
   .footer-left {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .footer-brand {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 }
 @media screen and (max-width: 576px) {
   .footer-nav ul {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
     text-align: center;
   }
 
